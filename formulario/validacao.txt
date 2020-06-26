@@ -1,0 +1,14 @@
+
+<!-- CAPCTCHA GOOGLE -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+   <script>
+    window.onload = function() {
+    var recaptcha = document.forms["contact_form"]["g-recaptcha-response"];
+    recaptcha.required = true;
+    recaptcha.oninvalid = function(e) {
+    // fazer algo, no caso to dando um alert
+    alert("Preencha todos os dados, inclusive o CAPTCHA.");
+      }
+   }
+   </script>
+ <!-- CAPCTCHA GOOGLE -->  
