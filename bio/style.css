@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(rgb(255, 180, 69), rgb(3, 148, 144));
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.link-bio img{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+.name{   
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    font-size: 12px; 
+    opacity: 0.8; 
+    margin-bottom: 5px;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    white-space: nowrap; 
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 0.5px 1px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+.name h1{
+    font-size: 40px;
+    text-align: center;
+}
+.icon{
+    margin-top: 5px;    
+    text-align: center; 
+    flex-flow: row wrap;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 50px;
+}
+.icon a {
+    text-decoration: none;
+}
+.link-bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;   
+    margin: 40px auto ;
+    gap:  20px;    
+}
+.link-bio a{
+    background-color: rgba(3, 148, 144, 0.733);
+    color: rgb(255, 180, 69);
+    padding: 15px;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    box-shadow: black;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-weight: bold;
+    min-height: 65px;
+    margin: 16px 0px;
+    border: 2px solid rgb(255, 180, 69);
+    border-radius: 30px;
+    display: table;
+    text-decoration: none;    
+}
+
+@media (max-width:200px){
+   .link-bio a{
+       width: 90%;
+       min-height: 100px;
+   } 
+}
+
+@media (max-width:768px){
+    .link-bio a{
+        width: 50%;
+        min-height: 100px;
+    } 
+ }
+.link-bio a:hover{
+    color: whitesmoke;
+
+}   
+.link-bio p{
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    color: whitesmoke;
+
+}
