@@ -1,7 +1,17 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
-Allow: /
+Allow: 
+
+User-agent: Googlebot
+Allow: 
+
+User-agent: Googlebot-image
+Allow:     
+
+User-agent: Mediapartners-Google 
+Allow:
+
+User-agent: Adsbot-Google    
+Allow:      
 
 Sitemap: url/sitemap.xml
+
